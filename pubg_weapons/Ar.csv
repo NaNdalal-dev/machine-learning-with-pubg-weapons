@@ -1,0 +1,11 @@
+Gun,Type,Ammo,Damage,Rate of fire(secs),Bullet speed(m/s),Reload Time(secs),Range,Body hit impact,Firing Mode
+AKM,AR,7.62,49,0.1,715,2.9,380,10000,Normal/ Full Auto
+M762,AR,7.62,47,0.086,715,2.9,380,10000,Normal/ Full Auto
+Groza,AR,7.62,49,0.08,715,3,380,10000,Normal/ Full Auto
+MK47 Mutant,AR,7.62,49,0.1,780,3.367,380,10000,Normal/ Burst
+M16A4,AR,5.56,43,0.1,900,2.2,400,8000,Normal/ Burst
+Scar-L,AR,5.56,43,0.096,870,2.2,350,9000,Normal/ Full Auto
+M416,AR,5.56,43,0.086,880,2.1,360,3500,Normal/ Full Auto
+AUG A3,AR,5.56,43,0.086,940,3.667,350,9000,Normal/ Full Auto
+QBZ95,AR,5.56,43,0.092,870,3.66,350,9000,Normal/ Full Auto
+G36C,AR,5.56,43,0.086,870,3.8,350,,Normal/ Full Auto
