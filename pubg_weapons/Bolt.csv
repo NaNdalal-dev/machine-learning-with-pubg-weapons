@@ -1,0 +1,5 @@
+Gun,Type,Ammo,Damage,Rate of fire(secs),Bullet speed(m/s),Reload Time(secs),Range,Body hit impact,Firing Mode
+AWM,SR,.300 Magnum,105,1.85,945,4.6,650,40000,Single Auto
+Kar98k,SR,7.62,75,1.9,760,4,500,16000,Single Auto
+M24,SR,7.62,79,1.8,790,4.2,600,20000,Single Auto
+Win94,SR,.45,66,0.6,760,4,500,16000,Single Auto
