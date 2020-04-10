@@ -1,0 +1,7 @@
+Gun,Type,Ammo,Damage,Rate of fire(secs),Bullet speed(m/s),Reload Time(secs),Range,Body hit impact,Firing Mode
+Micro UZI,SMG,9,26,0.048,350,3.1,150,5000,Normal/ Full Auto
+UMP45,SMG,.45,39,0.092,400,3.1,200,7000,Normal/ Full Auto
+Vector,SMG,9,31,0.054,300,2.2,150,7000,Normal/ Full Auto
+Thompson,SMG,.45,40,0.086,280,3.45,250,7000,Normal/ Full Auto
+PP-19 Bizon,SMG,9,35,0.086,350,3.8,200,7000,Normal/ Full Auto
+MP5K,SMG,9,33,0.067,400,4.58,200,7000,Normal/ Full Auto
