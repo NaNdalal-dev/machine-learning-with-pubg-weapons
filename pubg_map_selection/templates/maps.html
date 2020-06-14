@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select Map</title>
+</head>
+<body>
+
+	<center>
+		<h3>Select Map and Mode:</h3>
+	</center>
+<div>
+	<center>
+		<table>
+			<tr>
+				<td>
+					<details>
+						<summary><b>Classic:</b></summary>
+						<form action="/result" method="post">
+							<table>
+								<tr>
+									<td>
+										<input type="text" name="GameType" value="Classic">
+									</td>
+								</tr>
+							</table>
+							<h3>
+			Select Server:
+		</h3>
+		<div>
+			<table>
+				<tr>
+					<td>
+						
+							<select id='server' name='Server'>
+								<option value='Asia'>Asia</option>
+								<option value='NorthAmerica'>North America</option>
+								<option value="SouthAmerica">South America</option>
+								<option value="Europe">Europe</option>
+								<option value="KRJP">KRJP</option>
+								<option value="MiddleEast">Middle East</option>
+							</select>
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+						<table>
+							<tr>
+							<td>
+								<input type="radio" name="Map" id='Erangel' value="Erangel" checked="checked">
+								<label for='Erangel'>
+								<img src="{{url_for('static',filename='classic/erangel.png')}}" height="100" width="350">
+								</label>
+							</td>
+							</tr>
+							<tr><td>
+						<input type="radio" name="Map" id='Miramar' value="Miramar">
+						<label for='Miramar'>
+						<img src="{{url_for('static',filename='classic/miramar.png')}}" height="100" width="350">
+						</label>
+							</td></tr>
+
+							<tr><td>
+
+						<input type="radio" name="Map" id='Sanhok' value="Miramar">
+						<label for='Sanhok'>
+						<img src="{{url_for('static',filename='classic/sanhok.png')}}" height="100" width="350">
+						</label>
+							</td></tr>
+
+
+							<tr><td>
+						<input type="radio" name="Map" id='Vikendi' value="Vikendi">
+						<label for='Vikendi'>
+						<img src="{{url_for('static',filename='classic/vikendi.png')}}" height="100" width="350">
+						</label>
+							</td></tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<b>Select Perspective:</b>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<input id='fpp' type="radio" name="Perspective" value="FPP">
+									<label for='fpp'>
+									<i>FPP</i>
+									</label>
+								</td>
+							
+								<td>
+									<input id='tpp' type="radio" name="Perspective" value="TPP" checked="checked">
+									<label for='tpp'>
+									<i>TPP</i>
+									</label>
+								</td>
+							</tr>
+						</table>
+
+						<table>
+							<tr>
+								<td>
+									<b>Select Play Mode:</b>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<input id='solo' type="radio" name="PlayMode" value="Solo">
+									<label for='solo'><i>Solo</i></label>
+								</td>
+								<td>
+									<input id='duo' type="radio" name="PlayMode" value="Duo">
+									<label for='duo'>
+									<i>Duo</i>
+									</label>
+								</td>
+								<td>
+									<input id='squad' type="radio" name="PlayMode" value="Squad" checked="checked">
+									<label for='squad'>
+									<i>Squad</i>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<table>
+						<tr>
+							<td>
+								<center>
+								<input type="submit" name="submit" value="OK">
+								</center>
+							</td>
+						</tr>
+						</table>
+						</form>
+					</details>
+				</td>
+			</tr>
+		</table>
+		
+	</center>
+</div>
+	<div>
+		<center>
+			<table>
+				<tr>
+					<td>
+						<details>
+							<summary><b>Arcade:</b></summary>
+							<form action="/result" method="post">
+							<table>
+								<tr>
+									<td>
+										<input type="text" name="GameType" value="Arcade">
+									</td>
+								</tr>
+							</table>
+							<h3>
+			Select Server:
+		</h3>
+		<div>
+			<table>
+				<tr>
+					<td>
+						
+							<select id='server' name='Server'>
+								<option value='Asia'>Asia</option>
+								<option value='NorthAmerica'>North America</option>
+								<option value="SouthAmerica">South America</option>
+								<option value="Europe">Europe</option>
+								<option value="KRJP">KRJP</option>
+								<option value="MiddleEast">Middle East</option>
+							</select>
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+							<table>
+								<tr>
+									<td>
+									<input type="radio" name="Mode" Value='QuickMatch' id='qm' checked="checked">
+									<label for='qm'>
+										<img src="{{url_for('static',filename='arcade/quick.png')}}" height="100" width="350">
+									</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="Mode" Value='WarMode' id='wm' >
+										<label for='wm'>
+											<img src="{{url_for('static',filename='arcade/war.png')}}" height="100" width="350">
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="Mode" Value='SniperTraining' id='st'>
+										<label for='st'>
+											<img src="{{url_for('static',filename='arcade/sniper.png')}}" height="100" width="350">
+										</label>
+									</td>
+								</tr>
+							</table>
+							<table>
+							<tr>
+								<td>
+									<b>Select Perspective:</b>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<input id='fpp1' type="radio" name="Perspective" value="FPP">
+									<label for='fpp1'>
+									<i>FPP</i>
+									</label>
+								</td>
+							
+								<td>
+									<input id='tpp1' type="radio" name="Perspective" value="TPP" checked="checked">
+									<label for='tpp1'>
+									<i>TPP</i>
+									</label>
+								</td>
+							</tr>
+						</table>
+							<table>
+								<tr>
+								<td>
+									<b>Select Play Mode:</b>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<input id='solo1' type="radio" name="PlayMode" value="Solo">
+									<label for='solo1'><i>Solo</i></label>
+								</td>
+								<td>
+									<input id='duo1' type="radio" name="PlayMode" value="Duo">
+									<label for='duo1'>
+									<i>Duo</i>
+									</label>
+								</td>
+								<td>
+									<input id='squad1' type="radio" name="PlayMode" value="Squad" checked="checked">
+									<label for='squad1'>
+									<i>Squad</i>
+									</label>
+								</td>
+							</tr>
+						</table>
+							<table>
+								<tr>
+									<td>
+										<input type="submit" name="submit" value="OK">
+									</td>
+								</tr>
+							</table>
+							</form>
+						</details>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</div>
+
+	<div>
+		<center>
+			<table>
+			<tr>
+				<td>
+					<details>
+						<summary><b>Arena :</b></summary>
+						<form action="/result" method="post">
+							<table>
+								<tr>
+									<td>
+										<input type="text" name="GameType" value='Arena'>
+									</td>
+								</tr>
+							</table>
+							<h3>
+			Select Server:
+		</h3>
+		<div>
+			<table>
+				<tr>
+					<td>
+						
+							<select id='server' name='Server'>
+								<option value='Asia'>Asia</option>
+								<option value='NorthAmerica'>North America</option>
+								<option value="SouthAmerica">South America</option>
+								<option value="Europe">Europe</option>
+								<option value="KRJP">KRJP</option>
+								<option value="MiddleEast">Middle East</option>
+							</select>
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+							<table>
+								<tr>
+									<td>
+										<input type="radio" name="Mode" Value='ArenaTraining' id='at' checked="checked">
+										<label for='at'>
+											<img src="{{ url_for('static',filename='arena/arena_t.png') }}" height="100" width="350">
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="Mode" Value='TDM' id='tdm'>
+										<label for='tdm'>
+											<img src="{{ url_for('static',filename='arena/tdm.png') }}" height="100" width="350">
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="Mode" Value='Assault' id='assault'>
+										<label for='assault'>
+											<img src="{{ url_for('static',filename='arena/assault.png') }}" height="100" width="350">
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="radio" name="Mode" Value='Domination' id='dom'>
+										<label for='dom'>
+											<img src="{{ url_for('static',filename='arena/domination.png') }}" height="100" width="350">
+										</label>
+									</td>
+								</tr>
+							</table>
+							<table>
+							<tr>
+								<td>
+									<b>Select Perspective:</b>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<input id='fpp2' type="radio" name="Perspective" value="FPP">
+									<label for='fpp2'>
+									<i>FPP</i>
+									</label>
+								</td>
+							
+								<td>
+									<input id='tpp2' type="radio" name="Perspective" value="TPP" checked="checked">
+									<label for='tpp2'>
+									<i>TPP</i>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<table>
+								<tr>
+								<td>
+									<b>Select Play Mode:</b>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<input id='solo2' type="radio" name="PlayMode" value="Solo">
+									<label for='solo2'><i>Solo</i></label>
+								</td>
+								<td>
+									<input id='duo2' type="radio" name="PlayMode" value="Duo">
+									<label for='duo2'>
+									<i>Duo</i>
+									</label>
+								</td>
+								<td>
+									<input id='squad2' type="radio" name="PlayMode" value="Squad" checked="checked">
+									<label for='squad2'>
+									<i>Squad</i>
+									</label>
+								</td>
+							</tr>
+						</table>
+							<table>
+								<tr>
+									<td>
+										<input type="submit" name="submit" value="OK">
+									</td>
+								</tr>
+							</table>
+
+						</form>
+					</details>
+				</td>
+			</tr>
+			</table>		
+		</center>
+	</div>
+	<div>
+		<center>
+			<details>
+						<summary><b>PlayLab:</b></summary>
+						<form action="/result" method='post'>	
+							<table>
+								<tr>
+									<td>
+										<input type="text" name="GameType" value='PlayLab'>
+									</td>
+								</tr>
+							</table>
+							<h3>
+					Select Server:
+							</h3>
+		<div>
+			<table>
+				<tr>
+					<td>
+							<select id='server' name='Server'>
+								<option value='Asia'>Asia</option>
+								<option value='NorthAmerica'>North America</option>
+								<option value="SouthAmerica">South America</option>
+								<option value="Europe">Europe</option>
+								<option value="KRJP">KRJP</option>
+								<option value="MiddleEast">Middle East</option>
+							</select>
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+		<table>
+			<tr>
+				<td>
+					<input type="radio" name="Mode" Value='RageGear' id='rg' checked="checked">
+					<label for='rg'>
+				<img src="{{url_for('static',filename='playlab/ragegear.png')}}" height="100" width="350"  >
+					</label>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<input type="radio" name="Mode" Value='PayLoad' id='pl'>
+					<label for='pl'>
+				<img src="{{url_for('static',filename='playlab/payload.png')}}" height="100" width="350">
+					</label>
+				</td>
+				</tr>
+				<tr>
+				<td>
+					<input type="radio" name="Mode" Value='BlueHole' id='bh'>
+					<label for='bh'>
+				<img src="{{url_for('static',filename='playlab/bluehole.png')}}" height="100" width="350">
+					</label>
+				</td>
+			</tr>
+			</tr>
+		</table>
+		<table>
+							<tr>
+								<td>
+									<b>Select Perspective:</b>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<input id='fpp3' type="radio" name="Perspective" value="FPP">
+									<label for='fpp3'>
+									<i>FPP</i>
+									</label>
+								</td>
+							
+								<td>
+									<input id='tpp3' type="radio" name="Perspective" value="TPP" checked="checked">
+									<label for='tpp3'>
+									<i>TPP</i>
+									</label>
+								</td>
+							</tr>
+						</table>
+						<table>
+								<tr>
+								<td>
+									<b>Select Play Mode:</b>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td>
+									<input id='solo3' type="radio" name="PlayMode" value="Solo">
+									<label for='solo3'><i>Solo</i></label>
+								</td>
+								<td>
+									<input id='duo3' type="radio" name="PlayMode" value="Duo">
+									<label for='duo3'>
+									<i>Duo</i>
+									</label>
+								</td>
+								<td>
+									<input id='squad3' type="radio" name="PlayMode" value="Squad" checked="checked">
+									<label for='squad3'>
+									<i>Squad</i>
+									</label>
+								</td>
+							</tr>
+						</table>
+		<table>
+			<tr>
+				<td>
+					<input type="submit" name="submit" value="OK">	
+				</td>
+			</tr>
+		</table>
+						</form>
+
+
+			</details>
+		</center>
+	</div>
+</body>
+</html>
